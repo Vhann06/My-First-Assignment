@@ -1,0 +1,56 @@
+var oxyLvl = 92;
+
+
+function oxyObservation(oxyLvl){
+    if (oxyLvl >= 95) {
+        console.log("Normal reading.");
+    }   else if (oxyLvl >= 95 || oxyLvl <= 92) {
+        console.log("Acceptable to continue home monitoring.");
+    }     else if ( oxyLvl >= 95) {
+        console.log("Seek advice from health professionals.");
+    }   else if ( oxyLvl <= 92) {
+        console.log("Seek urgent medical advice.");
+    }
+
+}
+
+oxyObservation(oxyLvl);
+
+
+   OUTPUT
+
+
+[Running] node "C:\Users\ADMIN\AppData\Local\Temp\tempCodeRunnerFile.javascript"
+Acceptable to continue home monitoring.
+
+[Done] exited with code=0 in 0.11 seconds
+
+
+
+
+              TASK 2
+var pulseRate = 131;
+
+
+function pulseObservation(pulseRate){
+    if (pulseRate = 40-100) {
+        console.log('Normal reading.');
+    }   else if ( pulseRate = 101-109 && pulseRate >= 131) {
+        console.log('Acceptable to continue home monitoring.');
+    }   else if ( pulseRate = 110-130) {
+        console.log('Seek advice from health professionals.');
+    }   else if ( pulseRate >= 131 ) {
+        console.log('Seek urgent medical advice.');
+    }
+
+}
+
+pulseObservation(pulseRate)
+
+
+ output
+
+[Running] node "C:\Users\ADMIN\AppData\Local\Temp\tempCodeRunnerFile.javascript"
+Normal reading.
+
+[Done] exited with code=0 in 0.101 seconds

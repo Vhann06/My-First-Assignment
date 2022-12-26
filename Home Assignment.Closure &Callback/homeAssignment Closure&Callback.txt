@@ -1,0 +1,69 @@
+                   CLOSURE
+
+let ScarletBankAccount = createBankAccount("Scarlet");
+ScarletBankAccount,depositAmount("5000"),withdrawAmount("17000")
+
+function createBankAccount(Scarlet){
+    let balance = 10000;
+    console.log(`Hi, ${Scarlet}! Thank you for banking with us.Your current balance is ${10000}.`);}
+    function depositAmount(fiveThousandPesos){
+    let newBalance = 15000;
+    console.log(`Thank you for your transaction with us,You have deposit ${5000}`);}
+    function withdrawAmount(seventeenThousandPesos){
+        let amountWithdraw = 17000;
+        console.log(`you cannot withdraw due to insufficient amount, you only have ${15000} in your account.`);}
+    return {
+        depositAmount
+    }
+
+    console.log(createBankAccount);
+
+
+         OUTPUT
+
+[Running] node "c:\Users\ADMIN\New folder\tempCodeRunnerFile.javascript"
+Hi, Scarlet! Thank you for banking with us.Your current balance is 10000.
+Thank you for your transaction with us,You have deposit 5000
+you cannot withdraw due to insufficient amount, you only have 15000 in your account.
+
+[Done] exited with code=0 in 0.106 seconds
+
+
+
+           CALLBACKS
+
+createBankAccount("Scarlet",10000,depositAmount,withdrawAmount);
+
+function createBankAccount(Scarlet,balance,depositAmount,callback){
+    console.log(`Hi, ${Scarlet}! Thank you for banking with us.Your current balance is ${10000}.`);
+    callback(Scarlet,10000,5000,17000);
+}
+
+
+function depositAmount(fiveThousandPesos,newBalance,callback1){
+    console.log(`Thank you for your transaction with us,You have deposit ${5000}`);
+    callback(5000,15000);
+}
+function withdrawAmount(seventeenThousandPesos,newbalance){
+        console.log(`you cannot withdraw due to insufficient amount, you only have ${15000} in your account.`);
+    }
+    return {
+        depositAmount
+    };
+
+
+   OUTPUT
+
+[Running] node "c:\Users\ADMIN\New folder\tempCodeRunnerFile.javascript"
+Hi, Scarlet! Thank you for banking with us.Your current balance is 10000.
+you cannot withdraw due to insufficient amount, you only have 15000 in your account.
+
+[Done] exited with code=0 in 0.101 seconds
+
+
+
+
+
+
+
+                                                                                      
